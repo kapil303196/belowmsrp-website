@@ -2744,3 +2744,53 @@ h3 {
 	padding-top: 14em;
 }
 }
+
+
+.car-section ul
+{
+    list-style-type: none;
+}
+
+.car-section ul li
+{
+	width: 100%;
+	float: left;
+	padding: 2%;
+    margin: 5px;
+}    
+
+.car-section img
+{
+	float: left;
+    vertical-align: middle;
+}
+.car-section ul li p
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.image-section
+{
+	padding-bottom: 0px;
+    width: 30px;
+    /* height: 30px; */
+}
+
+._1poib0s {
+    margin-right: 1rem !important;
+}
+.d-inline-block {
+    display: inline-block!important;
+}
+.align-middle {
+    vertical-align: middle!important;
+}
+
+.picture-container {
+    display: inline-block;
+    position: relative;
+}
+
+.p-tag{
+	color: #3483ff;
+}
