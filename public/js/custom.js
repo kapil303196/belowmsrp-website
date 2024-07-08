@@ -90,124 +90,124 @@
     };
 	
    	
-	/*==== Cars ====*/
-	$(document).ready(function() { 
-	$(".carsmodals").owlCarousel({ 		  
-	   loop:true,
-		margin:30,
-		nav:true,
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-				nav:true,
-				loop:true
-			},
-			700:{
-				items:1,
-				nav:true,
-				loop:true
-			},
-			1170:{
-				items:1,
-				nav:true,
-				loop:true
-			}
-		}
+	// /*==== Cars ====*/
+	// $(document).ready(function() { 
+	// $(".carsmodals").owlCarousel({ 		  
+	//    loop:true,
+	// 	margin:30,
+	// 	nav:true,
+	// 	responsiveClass:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			nav:true,
+	// 			loop:true
+	// 		},
+	// 		700:{
+	// 			items:1,
+	// 			nav:true,
+	// 			loop:true
+	// 		},
+	// 		1170:{
+	// 			items:1,
+	// 			nav:true,
+	// 			loop:true
+	// 		}
+	// 	}
 	  
 	  
-	}); 
-	});
+	// }); 
+	// });
 	
 	
-	/*==== Testimonials ====*/
-	$(document).ready(function() { 
-	$(".testimonialsList").owlCarousel({ 		  
-	   loop:true,
-		margin:0,
-		nav:false,
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-				nav:false,
-				loop:true
-			},
-			700:{
-				items:1,
-				nav:false,
-				loop:true
-			},
-			1170:{
-				items:1,
-				nav:true,
-				loop:true
-			}
-		}
+	// /*==== Testimonials ====*/
+	// $(document).ready(function() { 
+	// $(".testimonialsList").owlCarousel({ 		  
+	//    loop:true,
+	// 	margin:0,
+	// 	nav:false,
+	// 	responsiveClass:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		700:{
+	// 			items:1,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		1170:{
+	// 			items:1,
+	// 			nav:true,
+	// 			loop:true
+	// 		}
+	// 	}
 	  
 	  
-	}); 
-	});
+	// }); 
+	// });
 	
 	
-	/*==== Blog ====*/
-	$(document).ready(function() { 
-	$(".blogGrid").owlCarousel({ 		  
-	   loop:true,
-		margin:30,
-		nav:false,
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-				nav:false,
-				loop:true
-			},
-			700:{
-				items:2,
-				nav:false,
-				loop:true
-			},
-			1170:{
-				items:3,
-				nav:true,
-				loop:true
-			}
-		}
+	// /*==== Blog ====*/
+	// $(document).ready(function() { 
+	// $(".blogGrid").owlCarousel({ 		  
+	//    loop:true,
+	// 	margin:30,
+	// 	nav:false,
+	// 	responsiveClass:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		700:{
+	// 			items:2,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		1170:{
+	// 			items:3,
+	// 			nav:true,
+	// 			loop:true
+	// 		}
+	// 	}
 	  
 	  
-	}); 
-	});
+	// }); 
+	// });
 		
 		
-	/*==== Clients Logo ====*/
-	$(document).ready(function() { 
-	$(".owl-clients").owlCarousel({ 		  
-	   loop:true,
-		margin:30,
-		nav:false,
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:2,
-				nav:false,
-				loop:true
-			},
-			700:{
-				items:4,
-				nav:false,
-				loop:true
-			},
-			1170:{
-				items:5,
-				nav:true,
-				loop:true
-			}
-		}
+	// /*==== Clients Logo ====*/
+	// $(document).ready(function() { 
+	// $(".owl-clients").owlCarousel({ 		  
+	//    loop:true,
+	// 	margin:30,
+	// 	nav:false,
+	// 	responsiveClass:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		700:{
+	// 			items:4,
+	// 			nav:false,
+	// 			loop:true
+	// 		},
+	// 		1170:{
+	// 			items:5,
+	// 			nav:true,
+	// 			loop:true
+	// 		}
+	// 	}
 	  
 	  
-	}); 
-	});
+	// }); 
+	// });
 	
 
     /*==== Smoothscroll ====*/    
@@ -220,11 +220,12 @@
 	});
 	
 	/* ==== Revolution Slider ==== */
+	// alert(window.innerWidth)
 	if($('.tp-banner').length > 0){
 		$('.tp-banner').show().revolution({
 			delay:6000,
-			startheight:750,
-			startwidth: 1170,
+			startheight: window.innerHeight > 1200 ? 750 : window.innerHeight * 1.2,
+			startwidth: window.innerHeight,
 			hideThumbs: 1000,
 			navigationType: 'none',
 			touchenabled: 'on',
@@ -232,9 +233,14 @@
 			navOffsetHorizontal: 0,
 			navOffsetVertical: 0,
 			dottedOverlay: 'none',
-			fullWidth: 'on'
 		});
 	}
 	
 	
 })(jQuery);
+
+document.getElementById('footer-text').innerHTML = new Date().getFullYear() + ' belowmsrp | All Rights Reserved.';
+
+$('#textone').attr('data-y', window.innerHeight/2.5);
+$('#texttwo').attr('data-y', window.innerHeight/2.5 + 40);
+$('#textthree').attr('data-y', window.innerHeight/2.5 + 90);
