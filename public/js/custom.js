@@ -239,7 +239,7 @@
 	
 })(jQuery);
 
-document.getElementById('footer-text').innerHTML = new Date().getFullYear() + ' belowmsrp | All Rights Reserved.';
+document.getElementById('footer-text').innerHTML = new Date().getFullYear() + ' Notsticker | All Rights Reserved.';
 
 $('#textone').attr('data-y', window.innerHeight/2.5);
 $('#texttwo').attr('data-y', window.innerHeight/2.5 + 40);
